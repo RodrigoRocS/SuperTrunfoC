@@ -2,6 +2,8 @@
 
 int main(){
 
+    //Variaveis onde seram armazenados os dados referentes as cartas.
+
     char estado1, estado2;
     char codDaCarta1[20], codDaCarta2[20];
     char nomeDaCidade1[20], nomeDaCidade2[20];
@@ -9,6 +11,13 @@ int main(){
     float areakm1, areakm2;
     float pib1, pib2;
     int numeroPontosTuristicos1, numeroPontosTuristicos2;
+
+    //Cabeçalho
+    
+    printf("***Cadastro de Cartas do Super Trunfo***\n");
+    printf("Você precisará inserir informações sobre duas cidades.\n\n");
+
+    //Entrada de dados da carta 1.
 
     printf("Digite uma letra de A a H para representar o estado da carta 1: \n");
     scanf(" %c", &estado1);
@@ -31,7 +40,9 @@ int main(){
     printf("Digite o numero de pontos turísticos da carta 1: \n");
     scanf("%d", &numeroPontosTuristicos1);
 
-    printf("Digite uma letra de A a H para representar o estado da carta 2: \n");
+    // Entrada de dados da carta 2.
+
+    printf("\nDigite uma letra de A a H para representar o estado da carta 2: \n");
     scanf(" %c", &estado2);
 
     printf("Digite o código da carta 2: \n");
@@ -52,14 +63,18 @@ int main(){
     printf("Digite o numero de pontos turísticos da carta 2: \n");
     scanf("%d", &numeroPontosTuristicos2);
 
-    printf("Carta 1: \n");
+    // Saida de dados da carta 1
+
+    printf("\nCarta 1: \n");
     printf("Estado: %c\n", estado1);
     printf("Código: %c%s\n", estado1, codDaCarta1);
     printf("Nome da Cidade: %s\n", nomeDaCidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f\n", areakm1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turísticos: %d\n", numeroPontosTuristicos1);
+    printf("Número de Pontos Turísticos: %d\n\n", numeroPontosTuristicos1);
+
+    // Saida de dados da carta 2
 
     printf("Carta 2: \n");
     printf("Estado: %c\n", estado2);
